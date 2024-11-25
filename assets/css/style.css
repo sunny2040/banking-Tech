@@ -2726,6 +2726,19 @@ header ul {
 header.header-1 .logo a {
   display: block;
 }
+.logo img {
+  width: 120px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflow in case of large logos */
+}
+
 
 header.header-1 a {
   text-transform: capitalize;
