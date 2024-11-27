@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="modinatheme">
     <!-- ======== Page title ============ -->
-    <title>Anyki - Contact</title>
+    <title>Anyki - Services</title>
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <!-- ===========  All Stylesheet ================= -->
@@ -28,6 +28,50 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- template main style css file -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS for hover underline effect */
+.service-box {
+    position: relative; /* Required for pseudo-elements */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.service-box:hover::after {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Thickness of the underline */
+    background-color: #007bff; /* Color of the underline */
+    transition: width 0.3s ease;
+}
+
+.service-box::after {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0; /* Initially hidden */
+    height: 3px; /* Thickness of the underline */
+    background-color: #007bff; /* Color of the underline */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.service-box:hover::after {
+    width: 100%; /* Full width on hover */
+    left: 0; /* Align to start */
+}
+
+    </style>
     
 </head>
 
@@ -78,8 +122,8 @@
                             </button>
                             <nav class="sidebar-nav">
                                 <ul class="metismenu" id="mobile-menu">
-                                    <li><a href="about.html">about</a></li>
-                                    <li><a href="service.html">Services</a></li>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="service.html">Services</a></li>
                                 <li><a href="team.html">Teams</a></li>
                                 <li><a class="has-arrow" href="#">Business</a> 
                                     <ul class="sub-menu">
@@ -110,7 +154,7 @@
                 <div class="row">
                     <div class="col-xl-7 col-12 col-lg-10 offset-lg-1 offset-xl-0">
                         <div class="hero-contents">
-                            <!-- <h1>Anyki - Contact</h1> -->
+                            <!-- <h1>Anyki - About</h1> -->
                         </div>
                     </div>
                 </div>
@@ -118,114 +162,110 @@
         </div>
     </section>
 
-    <!-- Contact Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <!-- Header Section -->
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h1 class="mb-5 bg-white text-center px-3 py-2 rounded shadow">Contact Us</h1>
-        </div>
-
-        <!-- Contact Details and Form Section -->
-        <div class="row g-4">
-            <!-- Contact Details -->
-            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="bg-light p-4 rounded shadow-sm">
-                    <h5 class="mb-3">Get In Touch</h5>
-                    <p class="mb-4">If you have any questions or need further information, feel free to reach out to us.</p>
-                    
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle bg-primary text-white me-3" style="width: 50px; height: 50px;">
-                            <i class="fa fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-1">Office</h6>
-                            <p class="mb-0">No 70, Chailabhar, Mohaddipur, Bettiah, West Champaran Bihar - 845454</p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle bg-primary text-white me-3" style="width: 50px; height: 50px;">
-                            <i class="fa fa-phone-alt"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-1">Helpline</h6>
-                            <p class="mb-0">01169268245</p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 rounded-circle bg-primary text-white me-3" style="width: 50px; height: 50px;">
-                            <i class="fa fa-envelope-open"></i>
-                        </div>
-                        <div>
-                            <h6 class="mb-1">Email</h6>
-                            <p class="mb-0">support@anyki.in</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="bg-light p-4 rounded shadow-sm">
-                    <form>
-                        <h5 class="mb-4">Send Us a Message</h5>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" required placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" required placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" required placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" required placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">
-                                    <a href="mailto:support@anyki.in" class="text-decoration-none" style="color: #fff;">Send Message</a>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Google Map Section -->
-        <div class="mt-5">
-            <h5 class="text-center mb-4">Find Us Here</h5>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28266.400286990765!2d84.46000000000001!3d27.151700000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993354e8dcb8b47%3A0x9083d535e51c3d6!2sWest%20Champaran%2C%20Bihar%20845454!5e0!3m2!1sen!2sin!4v1630410558436!5m2!1sen!2sin" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-                </iframe>
-           </div>
-        </div>
+    <!-- Header Section -->
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="mb-5 bg-white text-center px-3 py-2 rounded shadow">Our service</h1>
     </div>
-</div>
-<!-- Contact End -->
 
-
+    <section class="services-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Individual Service -->
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/aadhaarpay.png" alt="Aadhaar Pay" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Aadhaar Pay</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/dmt.png" alt="Money Transfer" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Money Transfer</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/bbps.png" alt="Bill Payments" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Bill Payments</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/recharge.png" alt="Recharge" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Recharge</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/cashdeposit.png" alt="Cash Deposit" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Cash Deposit</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/matm.png" alt="Micro ATM" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Micro ATM</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/pancard.png" alt="Pan Card" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Pan Card</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/bbps.png" alt="Payout" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Payout</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/pg.png" alt="Payment Gateway" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Payment Gateway</h5>
+                    </div>
+                </div>
+                <!-- Loans -->
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/bloan.png" alt="Business Loan" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Business Loan</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/ploan.png" alt="Personal Loan" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Personal Loan</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/bloan.png" alt="Education Loan" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Education Loan</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/bbps.png" alt="Daily Loan" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Daily Loan</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/bloan.png" alt="Overdraft Loan" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Overdraft Loan</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box text-center p-4 shadow rounded">
+                        <img src="assets/img/bbps.png" alt="Two Wheeler Loan" class="img-fluid mb-3" style="width: 50px;">
+                        <h5>Two Wheeler Loan</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="cta-banner-wrapper style-1 section-padding pt-0">
         <div class="container">
             <div class="cta-banner text-white">
