@@ -112,7 +112,15 @@
                     </div>
                     <div class="header-right-element text-white">
                         <a href="#">login</a>
-                        <a href="#" class="theme-btn black">get started</a>
+                        <a href="https://wa.me/919229635920?text=Hello,%20I%20need%20assistance!" 
+                           target="_blank" 
+                           class="theme-btn" 
+                           style="background-color: #25D366; color: white; border: none; padding: 10px 15px; border-radius: 5px; display: inline-flex; align-items: center; text-decoration: none;">
+                            <img src="assets/img/whatsapp.png" 
+                                 alt="WhatsApp" 
+                                 style="width: 20px; height: 20px; margin-right: 5px;">
+                            Chat with us
+                        </a>
                     </div>
                 </div>
                 <div class="d-block d-lg-none col-sm-1 col-md-8 col-6">
@@ -142,7 +150,16 @@
                                 <li><a href="contact.html">Contact</a></li>
                                 </ul>
 
-                                <a href="#" class="theme-btn d-block mt-4 text-center ms-0">get started</a>
+                                 <!-- WhatsApp Button -->
+                                 <a href="https://wa.me/919229635920?text=Hello,%20I%20need%20assistance!"
+                                 target="_blank"
+                                 class="theme-btn d-block mt-4 text-center ms-0"
+                                 style="background-color: #25D366; color: white; border: none; padding: 10px 15px; border-radius: 5px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;">
+                                 <img src="assets/img/whatsapp.png"
+                                     alt="WhatsApp"
+                                     style="width: 20px; height: 20px; margin-right: 8px;">
+                                 WhatsApp
+                             </a>
                             </nav>
                         </div> 
                     </div>
@@ -351,22 +368,7 @@
             </div>
         </div>
     </footer>
-        <!-- WhatsApp Popup -->
-        <div class="whatsapp-popup" onclick="openWhatsApp()">
-            <img src="assets/img/whatsapp.png" alt="WhatsApp Logo">
-            <span>Chat with us</span>
-        </div>
     
-    <!-- WhatsApp Popup Script -->
-        <script>
-            function openWhatsApp() {
-                const phoneNumber = "919229635920";
-                const message = encodeURIComponent("Hello, I need assistance!");
-                const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
-                window.open(whatsappURL, "_blank");
-            }
-        </script>
-
     <!--  ALl JS Plugins
     ====================================== -->
     <script src="assets/js/jquery.min.js"></script>
