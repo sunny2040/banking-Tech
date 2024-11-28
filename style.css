@@ -103,3 +103,44 @@ All the SCSS File in SCSS Folder of Assets Folder. You can read the doc file als
     width: 120px;
     height: auto;
 }
+
+
+.whatsapp-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-popup:hover {
+    background-color: #20b857;
+    transform: scale(1.05);
+}
+
+.whatsapp-popup img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-popup {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .whatsapp-popup img {
+        width: 25px;
+        height: 25px;
+    }
+}

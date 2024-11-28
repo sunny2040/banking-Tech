@@ -300,7 +300,7 @@
                             </div>
                             <ul>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Support</a></li>
+                                <li><a href="refund.html">Refund & Cancellation</a></li>
                                 <li><a href="terms.html">Terms & Conditions</a></li>
                                 <li><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
@@ -345,12 +345,27 @@
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/919229635920"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+        <!-- WhatsApp Popup -->
+        <div class="whatsapp-popup" onclick="openWhatsApp()">
+            <img src="assets/img/whatsapp.png" alt="WhatsApp Logo">
+            <span>Chat with us</span>
+        </div>
+    
+    <!-- WhatsApp Popup Script -->
+        <script>
+            function openWhatsApp() {
+                const phoneNumber = "919229635920";
+                const message = encodeURIComponent("Hello, I need assistance!");
+                const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+                window.open(whatsappURL, "_blank");
+            }
+        </script>
 
     <!--  ALl JS Plugins
     ====================================== -->
