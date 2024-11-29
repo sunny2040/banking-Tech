@@ -6,21 +6,27 @@
   <title>Login & Registration</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
       padding: 0;
     }
     .form-container {
+      width: 100%;
       max-width: 400px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
     }
     h2 {
       text-align: center;
       color: #333;
+      margin-bottom: 20px;
     }
     .form-group {
       margin-bottom: 15px;
@@ -28,33 +34,44 @@
     label {
       display: block;
       margin-bottom: 5px;
+      font-weight: 600;
+      color: #555;
     }
     input {
       width: 100%;
       padding: 10px;
-      box-sizing: border-box;
-      border: 1px solid #ddd;
       border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    input:focus {
+      border-color: #5cb85c;
     }
     button {
       width: 100%;
       padding: 10px;
       background: #5cb85c;
-      color: white;
+      color: #fff;
       border: none;
       border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
+      transition: background 0.3s;
     }
     button:hover {
       background: #4cae4c;
     }
     .toggle {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 15px;
+      font-size: 14px;
     }
     .toggle a {
-      color: #007bff;
+      color: #5cb85c;
       text-decoration: none;
+      font-weight: 600;
     }
     .toggle a:hover {
       text-decoration: underline;
