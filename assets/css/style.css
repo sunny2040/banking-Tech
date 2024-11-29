@@ -7057,7 +7057,7 @@ header.header-1 .header-right-element .color-2:hover {
 }
 
 footer {
-  background-color: #02021E;
+  background-color: #fff;
 }
 
 footer.footer-2 {
@@ -7093,7 +7093,7 @@ footer .footer-widgets-wrapper .col-12 {
 }
 
 footer .footer-widgets-wrapper a, footer .footer-widgets-wrapper p, footer .footer-widgets-wrapper span {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 footer .footer-widgets-wrapper .single-footer-widget {
@@ -7101,7 +7101,7 @@ footer .footer-widgets-wrapper .single-footer-widget {
 }
 
 footer .footer-widgets-wrapper .single-footer-widget .widget-title h5 {
-  color: #fff;
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
@@ -7146,14 +7146,14 @@ footer .footer-bottom-wrapper .footer-bottom-content {
 footer .footer-bottom-wrapper .footer-bottom-content .site-copyright p {
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: #000000;
 }
 
 footer .footer-bottom-wrapper .footer-bottom-content .site-copyright p a {
   line-height: inherit;
   font-size: inherit;
   font-weight: 500;
-  color: #fff;
+  color: #025aff;
 }
 
 footer .footer-bottom-wrapper .footer-bottom-content .social-links.red-color a {
@@ -7178,7 +7178,7 @@ footer .footer-bottom-wrapper .footer-bottom-content .social-links a {
   text-align: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
+  color: #000000;
   font-size: 14px;
   margin-left: 15px;
   -webkit-transition: all .3s ease-in-out;
